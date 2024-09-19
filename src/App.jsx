@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <div>Bharat mata ki jay</div>
       <Header/>
       <Body/>
     </>
