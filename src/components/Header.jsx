@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { IoMdCart } from "react-icons/io";
+
 
 const Header = () => {
   return (
@@ -18,7 +18,9 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
       <div className='d-flex justify-content-end'>
+            <h2>Cart</h2>
             <IoMdCart className='me-4'/>
+            {/* <img src={img1} alt="" /> */}
         </div>
     </Navbar>
   );
