@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";  
 import ProductCard from "./ProductCard";
+import Header from "./Header";
 // import { Link } from "react-router-dom";
 
 const Body = () => {
+
+    
+
     const[product, setProduct] = useState([]);
 
     useEffect(() => {

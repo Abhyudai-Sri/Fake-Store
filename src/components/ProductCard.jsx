@@ -7,7 +7,7 @@ const ProductCard = (props) => {
     const{data} = props;
 
     
-    const{image, category, description, rating} = data;
+    const{image, category, description, rating, price} = data;
 
     const pro = useSelector((state) => state.cart.products)
     const dispatch = useDispatch(); 
@@ -25,7 +25,10 @@ const ProductCard = (props) => {
             <h5>Rating: </h5> 
             <Rating className='ms-2' size={30} initialValue={rating?.rate} />
             </div>
-            <button type="button" className="btn btn-primary my-2" onClick={()=> handleAddProduct(data)}>Add</button>
+            <div className='d-flex justify-content-around'>
+            <p className='fw-bold fs-4 '>₹{Math.floor(price)}</p>
+            <button type="button" className="btn btn-primary mt-1 mb-4" onClick={()=> handleAddProduct(data)}>Add</button>
+            </div>
     </div>
   )
 }
